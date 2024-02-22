@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MenuActivity">
+
+    <ImageView
+        android:layout_width="241dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/grupo2"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/our_menu"
+        android:fontFamily="sans-serif-light"
+        android:textAllCaps="true"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:layout_margin="20dp"
+        android:paddingHorizontal="50dp">
+
+        <Button
+            android:id="@+id/btnAntojitos"
+            android:text="@string/antojitos"
+            android:background="@drawable/first_gradient"
+            android:layout_columnWeight="1"
+            android:paddingHorizontal="@dimen/menu_buttons_paddings"
+            android:layout_marginRight="@dimen/menu_buttons_margin"
+            android:layout_gravity="fill_horizontal"
+            android:paddingVertical="@dimen/menu_buttons_paddings"
+            />
+
+        <Button
+            android:id="@+id/btnEspe"
+            android:text="@string/especialidades"
+            android:background="@drawable/first_gradient"
+            android:layout_columnWeight="1"
+            android:paddingHorizontal="@dimen/menu_buttons_paddings"
+            android:layout_marginRight="@dimen/menu_buttons_margin"
+            android:layout_gravity="fill_horizontal"
+            android:paddingVertical="@dimen/menu_buttons_paddings"
+            />
+
+        <Button
+            android:id="@+id/btnCombi"
+            android:text="@string/combinations"
+            android:background="@drawable/first_gradient"
+            android:layout_columnWeight="1"
+            android:paddingHorizontal="@dimen/menu_buttons_paddings"
+            android:layout_marginRight="@dimen/menu_buttons_margin"
+            android:layout_gravity="fill_horizontal"
+            android:paddingVertical="@dimen/menu_buttons_paddings"
+            />
+
+        <Button
+            android:id="@+id/btnTortas"
+            android:text="@string/tortas"
+            android:background="@drawable/first_gradient"
+            android:layout_columnWeight="1"
+            android:paddingHorizontal="@dimen/menu_buttons_paddings"
+            android:layout_marginRight="@dimen/menu_buttons_margin"
+            android:layout_gravity="fill_horizontal"
+            android:paddingVertical="@dimen/menu_buttons_paddings"
+            />
+
+        <Button
+            android:id="@+id/btnSopas"
+            android:text="@string/sopas"
+            android:background="@drawable/first_gradient"
+            android:layout_columnWeight="1"
+            android:paddingHorizontal="@dimen/menu_buttons_paddings"
+            android:layout_marginRight="@dimen/menu_buttons_margin"
+            android:layout_gravity="fill_horizontal"
+            android:paddingVertical="@dimen/menu_buttons_paddings"
+            />
+
+        <Button
+            android:id="@+id/btnDrink"
+            android:text="@string/drinks"
+            android:background="@drawable/first_gradient"
+            android:layout_columnWeight="1"
+            android:paddingHorizontal="@dimen/menu_buttons_paddings"
+            android:layout_marginRight="@dimen/menu_buttons_margin"
+            android:layout_gravity="fill_horizontal"
+            android:paddingVertical="@dimen/menu_buttons_paddings"
+            />
+    </GridLayout>
+
+
+</LinearLayout>
