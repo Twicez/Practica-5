@@ -15,13 +15,40 @@ import android.content.Context
 var menu: ArrayList<Product> = ArrayList<Product>()
 class Productos_activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        menu = ArrayList<Product>()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_productos)
         var menuOption:String? =intent.getStringExtra("menuType")
         agregarProductos(menuOption)
 
-        var listView: ListView = findViewById(R.id.litview) as ListView
+        var imagen: ImageView = findViewById(R.id.title1)
+        when(menuOption){
+            "Antojitos"->{
+                imagen.setImageResource(R.drawable.antojitos)
+            }
+            "Especialidades"->{
+                imagen.setImageResource(R.drawable.especialidades)
+            }
+            "Combinaciones"->{
+                imagen.setImageResource(R.drawable.combinations)
+            }
+            "Tortas"->{
+                imagen.setImageResource(R.drawable.torta)
+            }
+            "Sopas"->{
+                imagen.setImageResource(R.drawable.sopas)
+            }
+            "Bebidas"->{
+                imagen.setImageResource(R.drawable.drinks)
+            }
+        }
 
+
+
+
+
+
+        var listView: ListView = findViewById(R.id.litview) as ListView
         var adaptador:  AdaptadorProductos = AdaptadorProductos(this,menu)
         listView.adapter=adaptador
 
